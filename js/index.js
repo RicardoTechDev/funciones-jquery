@@ -69,10 +69,14 @@ $("#after").on("click",function(){
     $("#p1").after("<h1>Hello world!!!</h1>");
 });
 
+/*El método  append() inserta contenido especificado en el extremo de los elementos seleccionados.
+Consejo: Para insertar contenido en el comienzo de los elementos seleccionados, utilice el método prepend().*/
 $("#append").on("click",function(){
     $("ol").append("<li>Esto es un item agregado</li>");
 });
 
+/*Con el método html() podemos obtener código html de un nodo del DOM o asignárselo.
+De esta manera podremos manipular de una manera fácil los diferentes elementos que hay en una página web. */
 $("#html").on("click",function(){
     $("#agregahtml").html("<spam style='color:blue;'>Chaooo Mundo!!!</spam>");
 });
@@ -81,10 +85,13 @@ $("#htmlalert").on("click",function(){
     alert($("<p>Por fin he entendido lo que significa 'upward compatible' (compatible hacia arriba). Significa que mantenemos todos nuestros viejos errores</p>").html());
 });
 
+/*El método attr() sirve para acceder a los atributos html de un elemento.*/
 $("#attr").on("click",function(){
     $("#naruto").attr("width", "500");
 });
 
+/*El método val () devuelve o establece el valor de la propiedad del elemento seleccionado. Ej: un input*/
+/*Con text() podemos obtener o asignar el texto que queramos a los diferentes elementos del DOM.*/
 $("#valtext").on("click",function(){
     var value = $("#texto" ).val();
     $("#textoreplica").text( value );
